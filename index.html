@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advanced Text Editor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="toolbar">
+		<button class="btn" id="bold"><strong>B</strong></button>
+		<button class="btn" id="italic"><em>I</em></button>
+		<button class="btn" id="underline"><u>U</u></button>
+		<button class="btn" id="undo"><u>undo</u></button>
+		<button class="btn" id="redo"><u>rendo</u></button>
+		<select id="font-size">
+			<option value="10px">10</option>
+			<option value="12px">12</option>
+			<option value="14px">14</option>
+			<option value="16px">16</option>
+			<option value="18px">18</option>
+			<option value="20px">20</option>
+			<option value="22px">22</option>
+			<option value="24px">24</option>
+		</select>
+		<select id="font-family">
+			<option value="Arial">Arial</option>
+			<option value="Courier New">Courier New</option>
+			<option value="Georgia">Georgia</option>
+			<option value="Tahoma">Tahoma</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Verdana">Verdana</option>
+		</select>
+		<input type="color" id="font-color">
+		<button class="btn" id="save">Save</button>
+		<button class="Printbtn" id="Printbtn">Print</button>
+	</div>
+	<div class="editor">
+		
+		<div class="content" contenteditable="true">
+
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
+
